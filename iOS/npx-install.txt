@@ -1,0 +1,36 @@
+NAVIGATION
+1) cartella user	--> npm install @react-navigation/native
+2) cartella progetto	--> npx expo install react-native-screens react-native-safe-area-context
+		--> npm install @react-navigation/native-stack
+		--> npm install @react-navigation/stack
+		--> npx expo install react-native-gesture-handler
+BOTTON TAB
+1) cartella progetto	--> npm install @react-navigation/bottom-tabs
+
+MAPS
+1) cartella progetto	--> npx expo install react-native-maps
+
+COLOR PICKER
+1) cartella progetto	--> npm install react-native-color-picker
+
+SLIDER
+1) cartella progetto	--> npm install @react-native-community/slider
+???		--> npx expo install @react-native-community/slider@4.2.4
+
+LOCATION
+1) cartella progetto 	--> npx expo install expo-location
+
+IMAGE PICKER
+1) cartella progetto	--> npx expo install expo-image-picker
+
+SQLITE
+1) cartella progetto	--> npx expo install expo-sqlite
+
+ASYNCSTORAGE
+1) cartella progetto	--> npm install @react-native-async-storage/async-storage
+
+STATUSBARHEIGTH
+1) cartella progetto	--> npm install --save react-native-status-bar-height
+
+NETINFO
+1) artella progetto	--> npx expo install @react-native-community/netinfo

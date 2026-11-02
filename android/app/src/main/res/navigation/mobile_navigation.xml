@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_root"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.twittwok.ui.home.HomeFragment"
+        android:label="Tɯιƚ Tσƙ"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_newtwok"
+        android:name="com.example.twittwok.ui.newTwok.NewTwokFragment"
+        android:label="Nuovo Twok"
+        tools:layout="@layout/fragment_newtwok" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.twittwok.ui.profile.ProfileFragment"
+        android:label="Profilo"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_navigation_profileFragment_to_followerFragment"
+            app:destination="@id/navigation_follower" />
+        <action
+            android:id="@+id/action_navigation_profileFragment_to_settingsFragment"
+            app:destination="@id/navigation_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_userinfo"
+        android:name="com.example.twittwok.ui.userInfo.UserInfoFragment"
+        android:label="User Info" />
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.twittwok.ui.map.MapFragment"
+        android:label="📍 Visualizza Mappa"
+        tools:layout="@layout/fragment_map" />
+
+    <action
+        android:id="@+id/action_global_toMap"
+        app:destination="@id/navigation_map" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.twittwok.ui.settings.SettingsFragment"
+        android:label="Modifica il tuo profilo"
+        tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/navigation_follower"
+        android:name="com.example.twittwok.ui.follower.FollowerFragment"
+        android:label="Utenti seguiti"
+        tools:layout="@layout/fragment_follower" >
+        <action
+            android:id="@+id/action_navigation_followerFragment_to_followerUserInfoFragment"
+            app:destination="@id/navigation_followerUserInfo" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_toUserInfo"
+        app:destination="@id/navigation_userinfo" />
+    <action android:id="@+id/action_global_toProfile" app:destination="@id/navigation_profile" />
+    <fragment
+        android:id="@+id/navigation_followerUserInfo"
+        android:name="com.example.twittwok.ui.follower.followerInfo.FollowerUserInfoFragment"
+        android:label="User Info"
+        tools:layout="@layout/fragment_follower_user_info" />
+</navigation>

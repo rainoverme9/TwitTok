@@ -1,0 +1,24 @@
+# Android
+.gradle/
+.idea/
+**/build/
+local.properties
+*.iml
+.cxx/
+.externalNativeBuild/
+
+# React Native / Expo
+node_modules/
+.expo/
+.expo-shared/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Sensitive files
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
